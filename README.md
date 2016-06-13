@@ -15,6 +15,6 @@ show variables like "%char%";
 ```
 
 ##  run
-mvn spring-boot:run
-or
+mvn spring-boot:run  
+or  
 run MyApplication.main
