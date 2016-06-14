@@ -17,10 +17,12 @@ import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * An example of Jersey
+ */
 
-@RestController
-//@Component
-//@Path("/")
+@Component
+@Path("/")
 public class UserResource {
     @Context
     private HttpServletRequest httpRequest;
@@ -28,10 +30,10 @@ public class UserResource {
     @Value("${custom.welcome}")
     private String welString;
 
-    @RequestMapping(value="/users",  method= RequestMethod.GET)
-//    @GET
-//    @Path("users")
-//    @Produces(MediaType.APPLICATION_JSON)
+
+    @GET
+    @Path("users")
+    @Produces(MediaType.APPLICATION_JSON)
     public List<AppUser> appUsers() {
         AppUser appUser = new AppUser(1, "张三");
         AppUser appUser2 = new AppUser(2, "李四");
@@ -41,8 +43,4 @@ public class UserResource {
         return list;
     }
 
-
-    public String welcome(){
-        return welString;
-    }
 }

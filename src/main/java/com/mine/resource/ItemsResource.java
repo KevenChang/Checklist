@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.*;
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
+/**
+ * An example of Spring MVC controller.
+ */
+
 @RestController
 @RequestMapping("/items")
 public class ItemsResource {
