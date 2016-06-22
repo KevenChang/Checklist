@@ -20,7 +20,7 @@ or
 run MyApplication.main
 
 ## deploy
-./build.sh
+./build.sh  
 ./run.sh
 
 ## test
