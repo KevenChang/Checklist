@@ -18,3 +18,10 @@ show variables like "%char%";
 mvn spring-boot:run  
 or  
 run MyApplication.main
+
+## deploy
+./build.sh
+./run.sh
+
+## test
+http://127.0.0.1:9000
